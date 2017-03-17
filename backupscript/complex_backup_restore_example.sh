@@ -15,7 +15,7 @@ backup_config()
 {
   # created a backup with the file name provided
   logger -t "$0" -s "Running Backup of webpage" -p warn
-	sudo tar cvzf ./$archive -C / /var/www/html
+	sudo tar cvzf ./$archive -C / /var/www/html;
   logger -t "$0" -s "Backup created $archive" -p warn
 }
 
@@ -24,7 +24,7 @@ restore_config()
 	logger -t "$0" -s "Restoring Backup $2" -p warn
 	sudo tar xvzf ./$archive -C /;
 	logger -t "$0" -s "re-apply permissions" -p warn
-	sudo chown -R www-data:www-data /var/www && sudo chmod -R 775 /var/www && sudo usermod -a -G www-data serveradmin && sudo chmod 777 /usr/local/bin/DatarakeExtractor.sh
+	sudo chown -R www-data:www-data /var/www && sudo chmod -R 775 /var/www && sudo usermod -a -G www-data serveradmin
 	logger -t "$0" -s "restart webservice" -p warn
 	sudo service lighttpd force-reload;
 	logger -t "$0" -s "restore completed" -p warn
@@ -41,7 +41,7 @@ case "$1" in
   *)
     echo "Usage:"
 	echo "Run with"
-    echo "$0 <backup|restore> [archivefile.tar.gz]"
+    echo "$0 <backup|restore> [backuparchivefile.tar.gz]"
 	echo ""
 	echo ""
     exit 1
