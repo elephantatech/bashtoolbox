@@ -10,4 +10,4 @@ Then I can restore configuration when I need to and also I can add the script to
 2. [complex Backup script example](backupscript/complex_backup_restore_example.sh)
 
 
-see [license](./LICENSE)
+[License](./LICENSE) used for this repository is Apache-2.0
