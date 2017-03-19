@@ -2,8 +2,15 @@
 
 The goal of this cheat sheet is to provide you with a how tcpdump command should be executed for various scenarios you may come across.
 
+## Command Description
+
+tcpdump is the utility used if you need to monitor the network traffic to and from local linux machine.
+
+for more check man pages or info pages on linux
+
 ##### NOTE: You might need sudo access to run the command
 
+## Usage
 Basic syntax for monitoring traffic on eth0:
 
     $ tcpdump -i eth0 -ln

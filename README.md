@@ -9,5 +9,10 @@ Then I can restore configuration when I need to and also I can add the script to
 1. [Simple Backup script](backupscript/simple_backup_restore.sh)
 2. [complex Backup script example](backupscript/complex_backup_restore_example.sh)
 
+### cheatsheets
+Check out the following cheatsheets some are for specific linux utilities (commands) that you can use for troubleshooting.
+
+1. [tcpdump](./tcpdump.md)
+2. [dig](./dig.md)
 
 [License](./LICENSE) used for this repository is Apache-2.0
